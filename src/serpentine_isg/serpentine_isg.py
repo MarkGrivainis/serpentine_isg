@@ -41,7 +41,7 @@ class Data:
 
     header: HeaderRow
     values: list[ValueRow]
-    sort_function: callable
+    sort_function: callable[[ValueRow, ValueRow], int]
 
     def head(self: Data) -> list[ValueRow]:
         """Return the first 5 rows."""
