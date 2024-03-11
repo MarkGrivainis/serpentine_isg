@@ -29,14 +29,14 @@ I recommend using pipx_
 
 .. code-block:: shell
 
-        pipx install https://github.com/MarkGrivainis/serpentine_isg.git
+        pipx install git+https://github.com/MarkGrivainis/serpentine_isg.git
                          
 
 But it can also be installed using pip
 
 .. code-block:: shell
 
-        pip install https://github.com/MarkGrivainis/serpentine_isg.git
+        pip install git+https://github.com/MarkGrivainis/serpentine_isg.git
 
 
 .. _pipx: https://github.com/pypa/pipx
