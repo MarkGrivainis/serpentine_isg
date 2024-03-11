@@ -1,16 +1,20 @@
 """Console script for serpentine_isg."""
 
 import sys
+from pathlib import Path
+
 import click
+
+from serpentine_isg.serpentine_isg import process_file
 
 
 @click.command()
-def main(args=None):
+@click.argument("input_file", type=click.Path(exists=True))
+@click.option("--row", "orientation", flag_value="row", default=True)
+@click.option("--column", "orientation", flag_value="column")
+def main(input_file: str, orientation: str) -> None:
     """Console script for serpentine_isg."""
-    click.echo("Replace this message by putting your code into "
-               "serpentine_isg.cli.main")
-    click.echo("See click documentation at https://click.palletsprojects.com/")
-    return 0
+    process_file(Path(input_file), orientation)
 
 
 if __name__ == "__main__":
