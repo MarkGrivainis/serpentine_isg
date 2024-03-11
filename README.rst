@@ -20,7 +20,7 @@ A script to convert coordinates into a serpentine pattern
 
 
 * Free software: MIT
-* Documentation: https://serpentine-isg.readthedocs.io.
+.. * Documentation: https://serpentine-isg.readthedocs.io.
 
 Installation
 -------------
